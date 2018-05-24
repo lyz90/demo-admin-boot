@@ -1,0 +1,20 @@
+server:
+  context-path:/demoBoot
+  port:9090
+  tomcat:
+    uri-encoding:UTF-8
+spring:
+  profiles:
+    active:dev
+  http:
+    encoding:
+      force:true
+      charset:UTF-8
+      enabled:true
+  application:
+    name:demoBoot
+  datasource:
+    driver-class-name:com.mysql.jdbc.Driver
+    url:jdbc:mysql://localhost:3306/lyzdemo
+    username:root
+    password:root
