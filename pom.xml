@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lyz.it</groupId>
-	<artifactId>demo-admin</artifactId>
+	<artifactId>demo-mapper.admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<modules>
 		<module>demo-dao</module>
 		<module>demo-service</module>
@@ -17,7 +17,7 @@
 		<module>demo-model</module>
 		<module>demo-common</module>
 	</modules>
-	<name>demo-admin</name>
+	<name>demo-mapper.admin</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -44,16 +44,31 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
-	<build>
+	<!--<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
-	</build>
+	</build>-->
 
 
 </project>

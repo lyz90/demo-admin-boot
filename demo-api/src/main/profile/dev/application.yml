@@ -1,19 +1,21 @@
 server:
-  context-path:/demoBoot
-  port:9090
+  servlet:
+    context-path: /demoBoot
+  port: 8081
   tomcat:
-    uri-encoding:UTF-8
+    uri-encoding: UTF-8
 spring:
   profiles:
-    active:dev
+    active: dev
   http:
     encoding:
-      force:true
-      charset:UTF-8
-      enabled:true
+      force: true
+      charset: UTF-8
+      enabled: true
   application:
-    name:demoBoot
+    name: demoBoot
   datasource:
+    type: org.apache.commons.dbcp.BasicDataSource
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/lyzdemo
     password: root

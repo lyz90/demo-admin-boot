@@ -1,18 +1,19 @@
 package com.lyz.it.dao.mapper.admin;
 
+import com.lyz.it.apimodel.admin.UserQuery;
 import com.lyz.it.model.admin.UserBean;
 
 public interface UserMapper {
 
     int deleteByPrimaryKey(Integer id);
 
-    int insert(UserBean record);
+    int insert(UserQuery record);
 
-    int insertSelective(UserBean record);
+    int insertSelective(UserQuery record);
 
     UserBean selectByPrimaryKey(Integer id);
 
-    int updateByPrimaryKeySelective(UserBean record);
+    int updateByPrimaryKeySelective(UserQuery record);
 
-    int updateByPrimaryKey(UserBean record);
+    int updateByPrimaryKey(UserQuery record);
 }

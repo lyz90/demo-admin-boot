@@ -1,10 +1,9 @@
 package com.lyz.it.model.admin;
 
 import com.lyz.it.model.common.BaseBean;
-import com.sun.xml.internal.bind.v2.model.core.ID;
 
 import java.io.Serializable;
-import java.util.Date;
+
 
 /**
  * td_b_sys_user

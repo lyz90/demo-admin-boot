@@ -46,7 +46,11 @@
             <artifactId>demo-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
+		<dependency>
+			<groupId>com.lyz.it</groupId>
+			<artifactId>demo-api-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
