@@ -28,6 +28,12 @@
 			<artifactId>javatuples</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.lyz.it</groupId>
+			<artifactId>demo-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 

@@ -14,7 +14,24 @@ spring:
   application:
     name:demoBoot
   datasource:
-    driver-class-name:com.mysql.jdbc.Driver
-    url:jdbc:mysql://localhost:3306/lyzdemo
-    username:root
-    password:root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lyzdemo
+    password: root
+    username: root
+    maxActive: 60
+    initialSize: 3
+    maxWait: 60000
+    minIdle: 2
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+#    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    removeAbandoned: true
+#    poolPreparedStatements: true
+#    maxOpenPreparedStatements: 20
+
+
+#logging:
+#  config: classpath:logback.xml
