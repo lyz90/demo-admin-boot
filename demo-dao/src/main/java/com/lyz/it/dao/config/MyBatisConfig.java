@@ -53,6 +53,8 @@ public class MyBatisConfig implements TransactionManagementConfigurer{
 
         bean.setPlugins(new Interceptor[]{pageHelper});
 
+
+
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         try {
             bean.setMapperLocations(resolver.getResources("classpath:mapper/**/*.xml"));
