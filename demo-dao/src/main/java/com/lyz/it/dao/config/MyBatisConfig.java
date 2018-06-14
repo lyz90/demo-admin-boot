@@ -51,6 +51,10 @@ public class MyBatisConfig implements TransactionManagementConfigurer{
 
         pageHelper.setProperties(properties);
 
+
+
+
+
         bean.setPlugins(new Interceptor[]{pageHelper});
 
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
