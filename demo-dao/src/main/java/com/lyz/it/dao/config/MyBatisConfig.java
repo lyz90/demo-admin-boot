@@ -39,6 +39,8 @@ public class MyBatisConfig implements TransactionManagementConfigurer{
         bean.setTypeAliasesPackage("com.lyz.it.model");
 
 //        分页插件
+
+
         PageHelper pageHelper = new PageHelper();
         Properties properties = new Properties();
 
@@ -51,7 +53,13 @@ public class MyBatisConfig implements TransactionManagementConfigurer{
 
         pageHelper.setProperties(properties);
 
+
+
+
+
         bean.setPlugins(new Interceptor[]{pageHelper});
+
+
 
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         try {
