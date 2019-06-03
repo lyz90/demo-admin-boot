@@ -6,6 +6,9 @@
 	<groupId>com.lyz.it</groupId>
 	<artifactId>demo-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+
+
 	<packaging>pom</packaging>
 	<modules>
 		<module>demo-dao</module>
